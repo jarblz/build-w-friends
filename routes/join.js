@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 var path = require('path');
 require("dotenv").config();
-var bcrypt = require('bcrypt');
+var bcrypt = require('bcryptjs');
 const models = require('../db').models;
 
 // models.member.sync({force: true}).then(() => {

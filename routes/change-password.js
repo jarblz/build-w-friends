@@ -4,7 +4,7 @@ var path = require('path');
 var mailer = require('express-mailer');
 var Guid = require('guid');
 var app = require('../app');
-var bcrypt = require('bcrypt');
+var bcrypt = require('bcryptjs');
 const models = require('../db').models;
 
 // models.passReset.sync({force: true}).then(() => {
@@ -37,6 +37,6 @@ router.post('/:guid', function(req, res, next) {
             });
         });
     });
-}); 
+});
 
 module.exports = router;

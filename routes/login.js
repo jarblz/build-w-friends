@@ -4,7 +4,7 @@ var path = require('path');
 require("dotenv").config();
 var passport = require('passport')
 , LocalStrategy = require('passport-local').Strategy;
-var bcrypt = require('bcrypt');
+var bcrypt = require('bcryptjs');
 const models = require('../db').models;
 
 /* GET users listing. */
@@ -24,7 +24,7 @@ passport.use(new LocalStrategy({
         console.log(user);
         bcrypt.compare(password, user.dataValues.password).then(function(res){
             if (res == true) {
-                return done(null, user);   
+                return done(null, user);
             }
         }).catch((err) => {
             console.error("/login: " + err);
@@ -43,7 +43,7 @@ passport.serializeUser((user, done)=>{
 passport.deserializeUser((id, done)=>{
     models.member.findOne({ where: {id: id}})
     .then((user)=>{
-        done(null, user);      
+        done(null, user);
     })
     .catch((err)=>{
         done(new Error(`User with the id ${id} does not exist`));
