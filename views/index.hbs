@@ -1,0 +1,240 @@
+<link rel='stylesheet' href='../../stylesheets/style.css'/>
+{{#if isOwner}}
+<div class="navbar w-nav" data-animation="default" data-collapse="medium" data-duration="400">
+  <div class="w-container"><a class="w-nav-brand" href="http://newstorycharity.org" target="_blank"><img class="logo" sizes="150px" src="../images/new-story-logo.png" srcset="../images/new-story-logo-p-500.png 500w, ../images/new-story-logo-p-800.png 800w, ../images/new-story-logo.png 1000w" width="150"></a>
+    <nav class="nav-menu w-nav-menu" role="navigation"><a class="nav-link w-nav-link" data-ix="open-about-popup" href="#">About</a><a class="nav-link w-nav-link" data-ix="open-about-popup" href="./{{id}}/edit">Edit Campaign</a><a class="button dark nav small w-button max-invite-button" href="./{{id}}/invite">Invite Friends</a></nav>
+    <div class="w-nav-button">
+      <div class="w-icon-nav-menu"></div>
+    </div>
+  </div>
+</div>
+{{else}}
+<div class="navbar w-nav" data-animation="default" data-collapse="medium" data-duration="400">
+  <div class="w-container"><a class="w-nav-brand" href="http://newstorycharity.org" target="_blank"><img class="logo" sizes="150px" src="../images/new-story-logo.png" srcset="../images/new-story-logo-p-500.png 500w, ../images/new-story-logo-p-800.png 800w, ../images/new-story-logo.png 1000w" width="150"></a>
+    <nav class="nav-menu w-nav-menu" role="navigation"><a class="nav-link w-nav-link" data-ix="open-about-popup" href="#">About</a><a class="nav-link w-nav-link" data-ix="open-about-popup" href="/login">Log In</a><a class="button nav small w-button max-get-and-join" href="#gettingStartedLink">Get Started and Join {{name}} {{lastname}}</a></nav>
+    <div class="w-nav-button">
+      <div class="w-icon-nav-menu"></div>
+    </div>
+  </div>
+</div>
+{{/if}}
+  
+  <div class="hero">
+    <div class="bottom-hero">
+      <div class="align-greeting-container">
+      <div class="align-greeting">
+      <h1 class="hero-h1">Build A Home With {{name}} {{lastname}}!</h1>
+      <p class="hero-paragraoh">{{description}}</p>
+      <div class="w-clearfix"><img class="headshot" src={{headshot}}>
+        <div class="text-block">by {{name}} {{lastname}}</div>
+        <a class="div-block-2 w-inline-block" href="https://www.facebook.com/sharer/sharer.php?u=http%3A//newstorycharity.org/group/{{id}}" target="_blank">
+          <div>Share on Facebook</div>
+        </a>
+      </div>
+      </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="cta-section" id="gettingStartedLink">
+      <div class="container-3 w-container">
+        <div class="next-column">
+          <div class="next-row">
+            <div>
+              <button id="buttonCheckout25"class="button top w-button max-button">$25/mo</button>
+              <button id="buttonCheckout50" class="button top w-button max-button" >$50/mo</button>
+              <button id="buttonCheckout100" class="button top w-button max-button">$100/mo</button>
+              <button id="buttonCheckoutOther" class="button top w-button max-button">Other</button>
+            </div>
+            <div id="secondPanel" style="display: none">
+              <button id="buttonCheckout10"class="button top w-button max-button">$10/mo</button>
+              <button id="buttonCheckout250" class="button top w-button max-button" >$250/mo</button>
+              <button id="buttonCheckout500" class="button top w-button max-button">$500/mo</button>
+              <button id="buttonCheckout1000" class="button top w-button max-button">$1000/mo</button>
+            </div>
+          </div>
+        <div class="goal-text"><span class="main-goal">${{amount}}/mo</span> donated of $500/mo goal</div>
+      </div>
+    </div>
+    </div>
+    <div class="body-content w-container">
+      <div class="w-row">
+        <div class="main-content-column w-col w-col-8">
+          <h4 class="h4">Lifetime of Safety for a Family</h4><img sizes="(max-width: 479px) 96vw, (max-width: 767px) 97vw, (max-width: 991px) 478.65625px, 605px" src="../images/build-a-home-facebook.png" srcset="../images/build-a-home-facebook-p-500.png 500w, ../images/build-a-home-facebook-p-800.png 800w, ../images/build-a-home-facebook.png 1200w" width="605">
+          <h4>What You're Building</h4>
+          <div class="w-embed w-video" style="padding-top: 56.17021276595745%;"><iframe class="embedly-embed" src="https://cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FAWRpjy0N7NQ%3Ffeature%3Doembed&url=http%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DAWRpjy0N7NQ&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FAWRpjy0N7NQ%2Fhqdefault.jpg&key=c4e54deccf4d4ec997a64902e9a30300&type=text%2Fhtml&schema=youtube" scrolling="no" frameborder="0" allowfullscreen=""></iframe></div>
+          <h4 class="h4 more">The Timeline</h4>
+          <div class="timeline-wrapper">
+            <div class="first timeline-object">
+              <div class="timeline-dot"></div>
+              <div class="timeline-object-text">Join your friend and start giving to build a home for a family in need!</div>
+              <div class="div-block"></div>
+            </div>
+            <div class="timeline-object">
+              <div class="timeline-dot"></div>
+              <div class="timeline-object-text">Meet and learn about the community you’ll be helping.</div>
+              <div class="div-block"></div>
+              <div class="light timeline-object-text">2-4 months later</div>
+            </div>
+            <div class="timeline-object">
+              <div class="timeline-dot"></div>
+              <div class="timeline-object-text">See the community planning, home design, and our process on the ground.</div>
+              <div class="div-block"></div>
+              <div class="light timeline-object-text">6-8 months later</div>
+            </div>
+            <div class="timeline-object">
+              <div class="timeline-dot"></div>
+              <div class="timeline-object-text">Meet the exact family you’ll be helping!</div>
+              <div class="div-block random"></div>
+              <div class="light timeline-object-text">10 months later</div>
+            </div>
+            <div class="timeline-object">
+              <div class="timeline-dot"></div>
+              <div class="timeline-object-text">Home is fully funded!</div>
+              <div class="div-block"></div>
+              <div class="light timeline-object-text">12 months later</div>
+            </div>
+            <div class="timeline-object">
+              <div class="timeline-dot"></div>
+              <div class="timeline-object-text">Follow construction updates from the ground.</div>
+              <div class="div-block"></div>
+              <div class="light timeline-object-text">13-16 months later</div>
+            </div>
+            <div class="timeline-object">
+              <div class="timeline-dot"></div>
+              <div class="timeline-object-text">Watch the family move in!</div>
+              <div class="div-block"></div>
+              <div class="light timeline-object-text">16-18 months later</div>
+            </div>
+            <div class="timeline-object">
+              <div class="timeline-dot"></div>
+              <div class="timeline-object-text">We start to measure the impact of the home you funded.</div>
+              <div class="light timeline-object-text">18 months +</div>
+            </div>
+          </div>
+          <h4 class="h4 more">FAQs</h4>
+          <div class="w-dropdown" data-delay="0">
+            <div class="dropdown-toggle w-dropdown-toggle">
+              <div class="w-icon-dropdown-toggle"></div>
+              <div>How much do I have to give monthly?</div>
+            </div>
+            <nav class="dropdown-list w-dropdown-list">
+              <p class="paragraph">You can choose how much you want to give from the choices above! $50 a month, $300 a month, or anything in between, you can sleep easy at night knowing every penny is going directly to build a home!</p>
+            </nav>
+          </div>
+          <div></div>
+          <div class="w-dropdown" data-delay="0">
+            <div class="dropdown-toggle w-dropdown-toggle">
+              <div class="w-icon-dropdown-toggle"></div>
+              <div>When do we meet the family?</div>
+            </div>
+            <nav class="dropdown-list w-dropdown-list">
+              <p class="paragraph">We'd love to connect you immediately but because we can't have one family wait 12 months due to the urgency of our work we have to wait until you and your friends hit ~$5,000 total. Along the way, you'll get to meet the community your home will be built in and updated on the building process.</p>
+            </nav>
+          </div>
+          <div></div>
+          <div class="w-dropdown" data-delay="0">
+            <div class="dropdown-toggle w-dropdown-toggle">
+              <div class="w-icon-dropdown-toggle"></div>
+              <div>Is my donation tax deductible?</div>
+            </div>
+            <nav class="dropdown-list w-dropdown-list">
+              <p class="paragraph">Every single cent of it! You'll get a tax receipt each month when your donation processes. (Pro-tip: Ask at the end of the year and we can consolidate into one receipt to make it easier for you &amp; Uncle Sam.)</p>
+            </nav>
+          </div>
+          <div></div>
+          <div class="w-dropdown" data-delay="0">
+            <div class="dropdown-toggle w-dropdown-toggle">
+              <div class="w-icon-dropdown-toggle"></div>
+              <div class="text-block-3">Can I trust this charity?</div>
+            </div>
+            <nav class="dropdown-list w-dropdown-list">
+              <p class="paragraph">New Story is not perfect. We're continually learning and evolving our methods, but we can promise we take every donation seriously and work hard to make the biggest impact with it. Luckily, 100% of your donation goes directly to building so you never have to worry if you're really paying for our printer paper with your donation. We've built 800+ homes to date and have impacted more than 3,000 people. Have questions about our model? We're happy to chat about it!&nbsp;</p>
+            </nav>
+          </div>
+          <div></div>
+        </div>
+        <div class="supporters-column w-col w-col-4">
+          <h4 class="h4">Monthly Supporters</h4>
+          {{#each supportObj}}
+          <div class="supporter">
+            <div class="w-row">
+              <div class="w-col w-col-2">
+                <div class="headshot-supporter">{{{this.initial}}}</div>
+              </div>
+              <div class="w-col w-col-10">
+                <div class="supporter-name">{{this.name}}</div>
+              </div>
+            </div>
+          </div>
+          {{/each}}
+          <div class="_100-percent-sidebar w-hidden-small w-hidden-tiny"><img class="image" sizes="(max-width: 767px) 100vw, (max-width: 991px) 69.75px, 87.484375px" src="../images/100-percent-promise.png" srcset="../images/100-percent-promise-p-500.png 500w, ../images/100-percent-promise.png 600w">
+            <p class="paragraph small">A group of private donors give to cover our operations, allowing 100% of your donation to directly build a safe home.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="about-popup" data-ix="close-about">
+      <div class="about-content"><a class="button small w-button w-hidden-main w-hidden-medium" data-ix="close-about" href="#">Close</a>
+        <h3>New Story builds safe homes and transforms slums into thriving communities.</h3>
+        <div class="about-row w-row">
+          <div class="w-col w-col-4 w-col-small-4 w-col-tiny-tiny-stack"><img class="_100 image-2" sizes="100vw" src="../images/100-percent-promise.png" srcset="../images/100-percent-promise-p-500.png 500w, ../images/100-percent-promise.png 600w">
+            <h4>100% Promise</h4>
+            <p class="paragraph small">Every cent of your donation directly funds local works and buys materials.</p>
+          </div>
+          <div class="w-col w-col-4 w-col-small-4 w-col-tiny-tiny-stack"><img class="image-2" src="../images/for-locals-3221988245b5aa7dbb859b3e1c2c404cc41f1e3af6b1d542f93dae6f340ed6f0.svg">
+            <h4>For Locals, By Locals</h4>
+            <p class="paragraph small">We partner with local nonprofits and hire workers from the community.</p>
+          </div>
+          <div class="w-col w-col-4 w-col-small-4 w-col-tiny-tiny-stack"><img class="image-2" src="../images/video-proof-12e23745976dcb19955df3b5f7e47d927e9b39886d233e3336f2424d09138b76.svg">
+            <h4>Proving Your Impact</h4>
+            <p class="paragraph small">Watch as the family you help moves in and know the impact you've had.</p>
+          </div>
+        </div><a class="button small w-button" data-ix="close-about" href="#">Close</a></div>
+    </div>
+  </div>
+  <div class="hero-bottom">
+    <div class="container-2 w-container">
+      <h3>Donate Monthly With {{name}} {{lastname}} &amp; Build A Home</h3>
+      <p class="paragraph">Donate monthly for 12 months = a lifetime of safety for a family</p>
+      <a class="button w-button max-get-started">Get Started</a>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="w-container">
+      <h5>New Story is a US 501c3 nonprofit &nbsp;• &nbsp;<a target="_blank" href="http://newstorycharity.org/about" class="footer-link">About New Story</a> &nbsp;• &nbsp;<a href="http://newstorycharity.org/contact" target="_blank" class="footer-link">Contact Us</a></h5>
+    </div>
+  </div>
+  <div class="bottom-bar" data-ix="show-edit-bar">
+    <div class="w-container">
+      <div class="row w-row">
+        <div class="column-4 w-col w-col-3">
+          <a class="link-block-2 w-inline-block" href="#">
+            <div class="bottom-bar-link">Saved! Let's get started 😎</div>
+          </a>
+        </div>
+        <div class="column-4 w-col w-col-3">
+          <a class="link-block-2 w-inline-block" href="edit.html">
+            <div class="bottom-bar-link">Edit Campaign</div>
+          </a>
+        </div>
+        <div class="w-col w-col-3">
+          <a class="link-block-2 w-inline-block" href="invite-friends.html">
+            <div class="bottom-bar-link">Invite Friends</div>
+          </a>
+        </div>
+        <div class="w-col w-col-3">
+          <a class="link-block-2 w-inline-block" href="#">
+            <div class="bottom-bar-link">Need any help?</div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js" type="text/javascript"></script>
+  <script src="../javascripts/webflow.js" type="text/javascript"></script>
+<!--STRIPE SCRIPT-->
+<script src="https://checkout.stripe.com/checkout.js"></script>
+<!--STRIPE CHARGE-->
+<script src="../javascripts/charge.js"></script>
+<script src="../javascripts/modal.js"></script>

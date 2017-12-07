@@ -1,0 +1,23 @@
+body {
+    margin-top: 1em;
+    padding-top: 0px;
+}
+
+.donate-form {
+    display: flex;
+    margin: 20%;
+    border: 1px solid gray;
+    flex-direction: column;
+}
+
+.add-member {
+    display: flex;
+    flex-direction: column;
+    margin: 5%;
+
+}
+
+.heading {
+    margin-left: auto;
+    margin-right: auto;
+}
